@@ -1,6 +1,5 @@
 class Door:
     """
-    testtest
     Diese Klasse beschreibt eine Türe mit der Eigenschaft color (Farbe) und den Zuständen
     door_is_open (für geöffnete Türe) sowie door_is_locked (für verriegelte Türe).
     Die Türe überwacht die beiden Zustände und verhindert so Aktionen, die nicht möglich sind.
@@ -33,7 +32,7 @@ class Door:
         Methode für das öffnen der Türe.
         Das ist aber nur möglich, wenn die Türe nicht verriegelt ist.
         """
-        if self._door_is_locked == False:
+        if self.door_is_locked == False:
             self._door_is_open = True
 
     def close_the_door(self):
@@ -80,7 +79,7 @@ class Door:
         return self._door_is_open
 
     @property
-    def door_ist_locked(self):
+    def door_is_locked(self):
         """
         getter-Methode für den Zustand door_is_locked
         :return: true, wenn die Türe verriegelt ist, sonst false
