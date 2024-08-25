@@ -46,7 +46,8 @@ class Door:
         """
         Methode für das Verriegeln der Tür.
         Das ist nur möglich, wenn die Tür nicht offen ist.
-        Für das Verriegeln ist aber das Türschloss zuständig. Es weiß, wie das geht.
+        Für das Verriegeln ist aber das
+        Türschloss zuständig. Es weiß, wie das geht.
         """
         if not self._door_is_open:
             self._door_is_locked = self._the_door_lock.lock()
@@ -55,7 +56,8 @@ class Door:
         """
         Methode für das Entriegeln der Tür.
         Das ist nur möglich, wenn die Tür verriegelt ist.
-        Für das Entriegeln ist aber das Türschloss zuständig. Es weiß, wie das geht.
+        Für das Entriegeln ist aber das
+        Türschloss zuständig. Es weiß, wie das geht.
         """
         if self._door_is_locked:
             self._door_is_locked = self._the_door_lock.unlock()
