@@ -1,10 +1,14 @@
 class Door:
 
     """
-    Diese Klasse beschreibt eine Türe mit der Eigenschaft color (Farbe) und den Zuständen
-    door_is_open (für geöffnete Türe) sowie door_is_locked (für verriegelte Türe).
-    Die Türe überwacht die beiden Zustände und verhindert so Aktionen, die nicht möglich sind.
-    Das verriegeln selber delegiert die Türe an ein Objekt vom Typ Door_lock (Türschloss).
+    Diese Klasse beschreibt eine Türe mit
+    der Eigenschaft color (Farbe) und den Zuständen
+    door_is_open (für geöffnete Türe)
+    sowie door_is_locked (für verriegelte Türe).
+    Die Türe überwacht die beiden Zustände
+     und verhindert so Aktionen, die nicht möglich sind.
+    Das verriegeln selber delegiert die Türe
+     an ein Objekt vom Typ Door_lock (Türschloss).
     """
 
     # Mit dem Keyword def wird eine Funktion bzw. eben ein Konstruktor deklariert.
@@ -19,7 +23,8 @@ class Door:
         :param ref2door_lock:
         :param base_color:
         """
-        # ein privates Attribut muss im Konstruktor initialisiert werden und ist dann in der Klasse
+        # ein privates Attribut muss im Konstruktor
+        # initialisiert werden und ist dann in der Klasse
         # über self._name_des_Attributs ansprechbar.
         self._the_door_lock = ref2door_lock
         # Hier wird der Setter eines Attributs aufgerufen (siehe unten)
